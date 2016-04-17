@@ -7,7 +7,11 @@ namespace EF6Demo.Models
 {
     public class Student
     {
-        public int ID { get; set; }
+        /// <summary>
+        /// Should use same pattern either ID or Property_Id
+        /// For Demo Usage only
+        /// </summary>
+        public int StudentID { get; set; }
 
         public string FirstName { get; set; }
 

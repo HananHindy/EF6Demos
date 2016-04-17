@@ -164,6 +164,8 @@
     <Compile Include="Models\DemoDBContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ClassesController.cs" />
+    <Compile Include="Views\StudentsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -205,6 +207,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Classes\Create.cshtml" />
+    <Content Include="Views\Classes\Delete.cshtml" />
+    <Content Include="Views\Classes\Details.cshtml" />
+    <Content Include="Views\Classes\Edit.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

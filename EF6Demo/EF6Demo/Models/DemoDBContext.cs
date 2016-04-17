@@ -8,6 +8,10 @@ namespace EF6Demo.Models
 {
     public class DemoDBContext : DbContext
     {
+        public DemoDBContext()
+        {
+
+        }
         public DbSet<Class> Classes { get; set; }
 
         public DbSet<Student> Students { get; set; }
