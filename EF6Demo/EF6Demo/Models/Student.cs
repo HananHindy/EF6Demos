@@ -5,6 +5,7 @@ using System.Web;
 
 namespace EF6Demo.Models
 {
+    [Schema("Schema1")]
     public class Student
     {
         /// <summary>

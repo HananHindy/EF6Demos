@@ -20,6 +20,8 @@ namespace EF6Demo.Models
 
             modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
             modelBuilder.HasDefaultSchema("DemoSchema");
+            modelBuilder.Conventions.Add(new SchemaConvention());
+
         }
 
         public DbSet<Class> Classes { get; set; }
