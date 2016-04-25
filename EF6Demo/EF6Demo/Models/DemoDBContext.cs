@@ -16,9 +16,9 @@ namespace EF6Demo.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            
-          
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
         }
 
         public DbSet<Class> Classes { get; set; }

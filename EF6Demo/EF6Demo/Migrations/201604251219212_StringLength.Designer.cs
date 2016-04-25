@@ -7,13 +7,13 @@ namespace EF6Demo.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class PluralizationWithEntitiesList : IMigrationMetadata
+    public sealed partial class StringLength : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(PluralizationWithEntitiesList));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(StringLength));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604251201483_PluralizationWithEntitiesList"; }
+            get { return "201604251219212_StringLength"; }
         }
         
         string IMigrationMetadata.Source
