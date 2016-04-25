@@ -23,8 +23,8 @@ namespace EF6Demo.Models
             modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
             modelBuilder.HasDefaultSchema("DemoSchema");
             modelBuilder.Conventions.Add(new SchemaConvention());
-            //modelBuilder.Entity<Person>().MapToStoredProcedures();
-            //  DbInterception.Add(new DBInterceptor());
+            modelBuilder.Entity<Person>().MapToStoredProcedures();
+            // DbInterception.Add(new DBInterceptor());
             
         }
 
