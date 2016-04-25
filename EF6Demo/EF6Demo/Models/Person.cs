@@ -5,13 +5,9 @@ using System.Web;
 
 namespace EF6Demo.Models
 {
-    public class Student 
+    public class Person
     {
-        /// <summary>
-        /// Should use same pattern either ID or Property_Id
-        /// For Demo Usage only
-        /// </summary>
-        public int StudentID { get; set; }
+        public int ID { get; set; }
 
         public string FirstName { get; set; }
 

@@ -185,12 +185,23 @@
     <Compile Include="Migrations\201604251501360_RowVersionToClass.Designer.cs">
       <DependentUpon>201604251501360_RowVersionToClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251624181_TeachersTable.cs" />
+    <Compile Include="Migrations\201604251624181_TeachersTable.Designer.cs">
+      <DependentUpon>201604251624181_TeachersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251631218_Inheritance.cs" />
+    <Compile Include="Migrations\201604251631218_Inheritance.Designer.cs">
+      <DependentUpon>201604251631218_Inheritance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\CustomDBConfigurations.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\SchemaConvention.cs" />
     <Compile Include="Models\DemoDBContext.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Student2.cs" />
+    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlExceptionFaker.cs" />
     <Compile Include="Views\ClassesController.cs" />
@@ -276,6 +287,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604251501360_RowVersionToClass.resx">
       <DependentUpon>201604251501360_RowVersionToClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251624181_TeachersTable.resx">
+      <DependentUpon>201604251624181_TeachersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251631218_Inheritance.resx">
+      <DependentUpon>201604251631218_Inheritance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
