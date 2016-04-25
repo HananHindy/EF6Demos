@@ -197,14 +197,25 @@
     <Compile Include="Migrations\201604251635579_StoredProc.Designer.cs">
       <DependentUpon>201604251635579_StoredProc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251704594_Relations.cs" />
+    <Compile Include="Migrations\201604251704594_Relations.Designer.cs">
+      <DependentUpon>201604251704594_Relations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251721495_Relations2.cs" />
+    <Compile Include="Migrations\201604251721495_Relations2.Designer.cs">
+      <DependentUpon>201604251721495_Relations2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CustomDBConfigurations.cs" />
+    <Compile Include="Models\Grade.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\SchemaConvention.cs" />
     <Compile Include="Models\DemoDBContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Student2.cs" />
+    <Compile Include="Models\StudentFile.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlExceptionFaker.cs" />
@@ -300,6 +311,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604251635579_StoredProc.resx">
       <DependentUpon>201604251635579_StoredProc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251704594_Relations.resx">
+      <DependentUpon>201604251704594_Relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251721495_Relations2.resx">
+      <DependentUpon>201604251721495_Relations2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

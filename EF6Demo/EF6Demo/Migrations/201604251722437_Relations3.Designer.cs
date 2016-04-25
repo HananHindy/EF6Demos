@@ -7,13 +7,13 @@ namespace EF6Demo.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CompositeKey : IMigrationMetadata
+    public sealed partial class Relations3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CompositeKey));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Relations3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604251650574_CompositeKey"; }
+            get { return "201604251722437_Relations3"; }
         }
         
         string IMigrationMetadata.Source
