@@ -24,6 +24,7 @@ namespace EF6Demo.Models
             modelBuilder.HasDefaultSchema("DemoSchema");
             modelBuilder.Conventions.Add(new SchemaConvention());
             modelBuilder.Entity<Person>().MapToStoredProcedures();
+            modelBuilder.Entity<Person>().HasKey(p => new { p.ID, p.USID });
             // DbInterception.Add(new DBInterceptor());
             
         }

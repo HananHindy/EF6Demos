@@ -9,6 +9,8 @@ namespace EF6Demo.Models
     {
         public int ID { get; set; }
 
+        public int USID { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201604251631218_Inheritance.Designer.cs">
       <DependentUpon>201604251631218_Inheritance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251635579_StoredProc.cs" />
+    <Compile Include="Migrations\201604251635579_StoredProc.Designer.cs">
+      <DependentUpon>201604251635579_StoredProc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\CustomDBConfigurations.cs" />
@@ -293,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604251631218_Inheritance.resx">
       <DependentUpon>201604251631218_Inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251635579_StoredProc.resx">
+      <DependentUpon>201604251635579_StoredProc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
