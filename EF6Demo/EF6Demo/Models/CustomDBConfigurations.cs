@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Pluralization;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.Web;
 
@@ -11,6 +12,7 @@ namespace EF6Demo.Models
     {
         public CustomDBConfigurations()
         {
+            SetExecutionStrategy(SqlProviderServices.ProviderInvariantName, () => new SqlAzureExecutionStrategy());
             //var entities = new[]
             //{
             //    new CustomPluralizationEntry("Class", "MyClass"),

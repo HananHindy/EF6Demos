@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure.Interception;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
@@ -16,12 +17,14 @@ namespace EF6Demo.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.Log = Console.WriteLine;
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
             modelBuilder.HasDefaultSchema("DemoSchema");
             modelBuilder.Conventions.Add(new SchemaConvention());
-
+            DbInterception.Add(new DBInterceptor());
+            
         }
 
         public DbSet<Class> Classes { get; set; }
