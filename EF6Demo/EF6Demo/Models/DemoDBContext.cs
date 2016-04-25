@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Interception;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
@@ -13,11 +14,12 @@ namespace EF6Demo.Models
         public DemoDBContext() : base("DemoConnectionString")
         {
             Database.SetInitializer(new DropCreateDatabaseAlways<DemoDBContext>());
+            //Database.Log = message => Trace.WriteLine(message);
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.Log = Console.WriteLine;
+            
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
