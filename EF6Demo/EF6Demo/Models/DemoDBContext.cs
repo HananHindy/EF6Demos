@@ -19,6 +19,7 @@ namespace EF6Demo.Models
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(100));
+            modelBuilder.HasDefaultSchema("DemoSchema");
         }
 
         public DbSet<Class> Classes { get; set; }

@@ -168,6 +168,10 @@
     <Compile Include="Migrations\201604172240384_RemovePluralization.Designer.cs">
       <DependentUpon>201604172240384_RemovePluralization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251219212_StringLength.cs" />
+    <Compile Include="Migrations\201604251219212_StringLength.Designer.cs">
+      <DependentUpon>201604251219212_StringLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\CustomDBConfigurations.cs" />
@@ -245,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604172240384_RemovePluralization.resx">
       <DependentUpon>201604172240384_RemovePluralization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251219212_StringLength.resx">
+      <DependentUpon>201604251219212_StringLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
