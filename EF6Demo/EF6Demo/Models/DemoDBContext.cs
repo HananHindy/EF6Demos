@@ -9,7 +9,7 @@ namespace EF6Demo.Models
 {
     public class DemoDBContext : DbContext
     {
-        public DemoDBContext()
+        public DemoDBContext() : base("DemoConnectionString")
         {
             Database.SetInitializer(new DropCreateDatabaseAlways<DemoDBContext>());
         }

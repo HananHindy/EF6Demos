@@ -176,6 +176,10 @@
     <Compile Include="Migrations\201604251222385_SchemaChange.Designer.cs">
       <DependentUpon>201604251222385_SchemaChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251236077_SchemaChange2.cs" />
+    <Compile Include="Migrations\201604251236077_SchemaChange2.Designer.cs">
+      <DependentUpon>201604251236077_SchemaChange2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\CustomDBConfigurations.cs" />
@@ -260,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604251222385_SchemaChange.resx">
       <DependentUpon>201604251222385_SchemaChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251236077_SchemaChange2.resx">
+      <DependentUpon>201604251236077_SchemaChange2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
