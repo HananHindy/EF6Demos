@@ -127,6 +127,7 @@ namespace EF6Demo.Views
                             + "have been displayed. If you still want to edit this record, click "
                             + "the Save button again. Otherwise click the Back to List hyperlink.");
                         classToBeUpdated.RowVersion = databaseValues.RowVersion;
+                        @class.RowVersion = databaseValues.RowVersion;
                     }
                 }
                 catch (RetryLimitExceededException /* dex */)
