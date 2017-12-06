@@ -9,5 +9,6 @@ namespace EF6Demo.Models
     {
         public int ID { get; set; }
         public string GradeName { get; set; }
+        public int TestProperty { get; set; }
     }
 }
